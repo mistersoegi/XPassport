@@ -5,6 +5,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'KEEP_IT_A_SECRET'
 CORS(app, resources={ r'/*': {'origins': "*"}}, supports_credentials=True)
 
+#TESTING
 @app.route("/")
 def hello_world():
     return "<p>X PASSPORT</p>"
